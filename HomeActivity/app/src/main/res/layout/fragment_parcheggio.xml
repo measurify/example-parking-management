@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="fragment_home_activity.Parcheggio">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#00447d"
+        android:layout_marginTop="40dp"
+        android:text=" Il tuo ultimo parcheggio: " />
+
+    <TextView
+        android:id="@+id/tvPosizioneParcheggio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#1186a1"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text=" Impedimenti parcheggio:"
+        android:textSize="30dp"
+        android:visibility="visible"
+        android:textColor="#00447d"
+
+        />
+    <!--Si potrebbe rendere invisibile se non ci sono lavaggi dove ha parcheggiato!-->
+
+    <TextView
+        android:id="@+id/tvOrarioParcheggio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#1186a1"
+        android:textSize="23dp"
+        />
+
+    <Button
+        android:id="@+id/btMostraSullaMappa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Mostra sulla mappa"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#0b839f"
+        />
+
+    <Button
+        android:id="@+id/btEliminaParcheggio"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Elimina"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#0b839f"
+        />
+
+
+</LinearLayout>

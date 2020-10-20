@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text=" Crea il tuo profilo"
+        android:background="#ffffff"
+        android:textColor="#1d8ca6"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1d8ca6"
+        android:backgroundTint="#1d8ca6"
+        android:text=" Username:"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+/>
+    <EditText
+        android:id="@+id/etSignin_Username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e3f2f6"
+        android:backgroundTint="#e3f2f6"
+        android:hint="Scrivi Username"
+        android:singleLine="true"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1d8ca6"
+        android:backgroundTint="#1d8ca6"
+        android:text=" Password:"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+    />
+
+    <EditText
+        android:id="@+id/etSignin_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e3f2f6"
+        android:backgroundTint="#e3f2f6"
+        android:hint="Scrivi Password"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:password="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1d8ca6"
+        android:backgroundTint="#1d8ca6"
+        android:text=" Conferma Password"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etSignin_Password_Conferma"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e3f2f6"
+        android:backgroundTint="#e3f2f6"
+        android:hint="Conferma Password"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:password="true"
+        />
+
+
+    <TextView
+        android:id="@+id/tvErrore_Signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFFF0000" />
+
+
+    <ProgressBar
+        android:id="@+id/pbSignin"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="110dp"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/bttRegistrati"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Registrati"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/bttBackSignin_to_LoginSignin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="150dp"
+        android:backgroundTint="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backbtt"
+        android:tint="#1d8ca6"
+        android:visibility="visible" />
+
+
+</LinearLayout>

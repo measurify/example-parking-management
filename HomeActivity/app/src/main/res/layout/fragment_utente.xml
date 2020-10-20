@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+
+    tools:context="fragment_home_activity.Utente">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:textColor="#00447d"
+        android:text="  Il tuo Username: " />
+    <TextView
+        android:id="@+id/tvFragmentUtente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1d8ca6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:text=""/>
+
+
+    <Button
+        android:id="@+id/btExit_Utente"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:textColor="#ffffff"
+        android:background="#00447d"
+        android:text="Esci dall'account" />
+
+</LinearLayout>

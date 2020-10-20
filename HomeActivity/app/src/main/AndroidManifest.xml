@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.parkingapp.homeactivity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        android:label="Parking Advisor" >
+        <!--SCREEN ORIENTATION = PORTRAIT PER IMPEDIRE ROTAZIONE SCHERMO, CHE SPESSO E' DANNOSA PER GLI ASYNC TASKS-->
+
+        <!--Il meta data serve per la chiave API -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/API_KEY"/>
+
+        <!--main activity-->
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--home activity-->
+        </activity>
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DaMainAHomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--login activity-->
+        <activity android:name=".LogInActivity"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="DaLoginOrSigninALogin"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+
+        <!--log/sign activity-->
+        <activity android:name=".LoginOrSigninActivity"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="DaMainALoginOrSignin"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+
+        <!--signin activity-->
+        <activity android:name=".SigninActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DaLoginOrSigninASignin"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--esecuzione activity-->
+        <activity android:name=".Esecuzione"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DaHomeFragmentAEsecuzione"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="RichiesteConferma.CambiaUtente"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DaUtenteACambiaUtente"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="RichiesteConferma.EliminaParcheggio"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DaParcheggioAEliminaParcheggio"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MostraParcheggio"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DaParcheggioAMostraSullaMappa"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".ServiceEsecuzione"/>
+        <receiver android:name="Notifica.Notifica"/>
+        <receiver android:name="Notifica.NotificaBroadcastReceiver"/>
+
+    </application>
+
+    <!--permessi-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="true" />
+
+
+</manifest>

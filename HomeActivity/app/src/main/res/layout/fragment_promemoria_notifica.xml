@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    android:layout_gravity="center_horizontal"
+    tools:context="fragment_home_activity.PromemoriaNotifica">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Imposta notifica avviso"
+        android:textColor="#00447d"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"/>
+
+
+    <TextView
+        android:id="@+id/tvOrarioNotifica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  1 ora"
+        android:textColor="#1186a1"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/spOrarioNotifica"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/menu_orari"
+        android:layout_alignEnd="@+id/tvOrarioNotifica"
+        android:layout_marginTop="150dp"
+ />
+
+    <ListView
+        android:id="@+id/lvListaOrariNotifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="200dp" />
+
+
+
+
+</RelativeLayout>

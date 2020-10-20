@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text=" Conferma per continuare"
+        android:textColor="#00447d"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btConfermaUscitaUtente"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/conferma_bottone" />
+
+        <Button
+            android:id="@+id/btAnnullaUscitaUtente"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="143dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/annulla_bottone" />
+    </LinearLayout>
+
+    </LinearLayout>

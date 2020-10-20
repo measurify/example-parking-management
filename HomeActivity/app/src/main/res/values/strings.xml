@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Parking Advisor</string>
+    <string name="MAIN_TO_HOME">DaMainAHomeActivity</string>
+    <string name="MAIN_TO_LOGSIGN">DaMainALoginOrSignin</string>
+    <string name="LOGINSIGNIN_TO_LOGIN">DaLoginOrSigninALogin</string>
+    <string name="LOGINSIGNIN_TO_SIGNIN">DaLoginOrSigninASignin</string>
+    <string name="HOME_FRAGMENT_TO_ESECUZIONE">DaHomeFragmentAEsecuzione</string>
+    <string name="FRAGMENT_PARCHEGGIO_TO_MOSTRA_SULLA_MAPPA">DaParcheggioAMostraSullaMappa</string>
+
+
+    <!--Stringhe per aprire e chiudere menu a tendina home activity!-->
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!--Stringhe per chiedere conferma uscita!-->
+    <!--Alcune di queste stringhe non sappiamo ancora se ci serviranno !-->
+    <string name="EXIT_OR_DELETE">DaUtenteACambiaUtente</string>
+    <string name="ELIMINA_PARCHEGGIO">DaParcheggioAEliminaParcheggio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Chiave API -->
+    <string name="API_KEY" translatable="false">AIzaSyA09MsWgTgGZvMh8KDjyNtxm8ovRYoq1Dg</string>
+
+
+    <!--Città salvate sul Server-->
+
+    <string-array name="Città_Server">
+        <item>Chiavari</item>
+        <item>Genova</item>
+        <item>Lavagna</item>
+        <item>Rapallo</item>
+        <item>Sestri Levante</item>
+
+
+    </string-array>
+
+
+</resources>
