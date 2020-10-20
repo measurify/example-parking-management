@@ -7,7 +7,7 @@ In particular this app should save the car position in a server and compare with
 Since the car's position has been saved in a server, more than one user that share the same account would be able to see the current car position on their smartphones.
 
 
-# Operation
+## Operation
 
 Before starting the application will ask user to enable geolocalization permission, evenmore while the application is running the GPS and the internet connection must be enabled.
 
@@ -15,6 +15,6 @@ When the app runs, you have to sign in or log in an account, then the app will s
 and when you are ready to go, you will put the phone in your pocket (the app will understand when you have arrived).
 In the menù you can also change the account, see where you have parked and the impediment around you, change the time in which the app will alert you.
 
-# Quick start
+## Quick start
 
 You have to install Android Studio, open this project, sync the phone with Android Studio via Usb - which is the most simple way - then debug the app and Android Studio will install it.
