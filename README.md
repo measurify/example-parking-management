@@ -4,7 +4,7 @@ This app is an instrument to avoid fines, this app should alert you when an impe
 
 This app is thought for people who live in cities where parkings have often impediments like payment parkigs, street washing, or others impediments, so this ap should help users to be notified wherever these things could happen.
 In particular this app should save the car position in a server and compare with the impedimentes that are known to the server, so that user will receive a notification with an advance defined by the user (1 hour, 2 hours, 4 hours and one day).
-Since the car's position has been saved in a server, more than one user that share the same account would be able to see the current car position pn their smartphones.
+Since the car's position has been saved in a server, more than one user that share the same account would be able to see the current car position on their smartphones.
 
 
 #Operation
