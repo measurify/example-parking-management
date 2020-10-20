@@ -12,7 +12,7 @@
 
     <Button
         android:id="@+id/bttMain"
-        android:layout_width="345dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="540dp"
         android:background="@drawable/custom_button"
